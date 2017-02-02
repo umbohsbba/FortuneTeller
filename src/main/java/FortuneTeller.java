@@ -27,24 +27,35 @@ do{
 		}
 		
 			System.out.println("What is your birthmonth?");
-			String birthMonth = scanner.next();
-			String substring1stletter = birthMonth.substring(0, 1);
-			String substring2ndletter = birthMonth.substring(1, 2);
-			String substring3rdletter = birthMonth.substring(2, 3).toLowerCase();
 			String money = null;
-			if (combined.contains(substring1stletter))
+			String birthMonth = scanner.next();
+			if(combined.contains(birthMonth.substring(0,1))){
 				money = "one million";
-			{
 			}
-			if (combined.contains(substring2ndletter))
+			if(combined.contains(birthMonth.substring(1,2))){
 				money = "fifty";
-			{
 			}
-			if (combined.contains(substring3rdletter))
+			if(combined.contains(birthMonth.substring(2,3))){
 				money = "one hundred";
-			{
-
 			}
+			
+//			String substring1stletter = birthMonth.substring(0, 1);
+//			String substring2ndletter = birthMonth.substring(1, 2);
+//			String substring3rdletter = birthMonth.substring(2, 3).toLowerCase();
+//			String money = null;
+//			if (combined.contains(substring1stletter))
+//				money = "one million";
+//			{
+//			}
+//			if (combined.contains(substring2ndletter))
+//				money = "fifty";
+//			{
+//			}
+//			if (combined.contains(substring3rdletter))
+//				money = "one hundred";
+//			{
+//
+//			}
 			System.out.println("What is your favorite ROYGBIV color?(If you don't know what ROYGBIV is enter \"help\"");
 			String roygbiv = scanner.next();
 
